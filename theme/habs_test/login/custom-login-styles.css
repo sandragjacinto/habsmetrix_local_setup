@@ -1,0 +1,182 @@
+body.login {
+    background-image: url("../img/shattered-island.gif");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .login h1 a {
+    background-image: url('../img/logo.png');
+    width: 100%;
+    background-position: center;
+    background-size: 100% auto;
+  }
+
+  #loginform{
+      background-color: #272830;
+  }
+
+  .login form {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 46px;
+    background-color: #272830;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+#wp-auth-check-wrap #wp-auth-check {
+    background-color: #272830;
+}
+
+  .login .message{
+      border: 1px solid #272830;
+    border-left: 4px solid #272830;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: #e6ff00;
+    font-size: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1)
+  }
+
+  .login label {
+    font-size: 14px;
+    color: darkgrey;
+  }
+
+  .login #nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: darkgrey;
+}
+
+.login #backtoblog a, .login #nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: darkgrey;
+}
+  
+  .login input[type="text"]{
+    background-color: #ffffff;
+    border-color:#dddddd;
+    -webkit-border-radius: 4px;
+  }
+  
+  .login input[type="password"]{
+    background-color: #ffffff;
+    border-color:#dddddd;
+    -webkit-border-radius: 4px;
+  }
+
+  .login .button-primary {
+    width: 120px;
+    float:right;
+    background-color:#e6ff00 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e6ff00), to(#e6ff00));
+    background: -webkit-linear-gradient(top, #e6ff00, #e6ff00);
+    background: -moz-linear-gradient(top, #e6ff00, #e6ff00);
+    background: -ms-linear-gradient(top, #e6ff00, #e6ff00);
+    background: -o-linear-gradient(top, #e6ff00, #e6ff00);
+    background-image: -ms-linear-gradient(top, #e6ff00 0%, #e6ff00 100%);
+    color: black;
+    -webkit-border-radius: 4px;
+    border: 1px solid #e6ff00;
+    text-shadow: none;
+    text-shadow: 0 0px 0px #555555;
+    box-shadow: 0 1px 1px #555555;
+  }
+  
+  .login .button-primary:hover {
+    background-color:black !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#black), to(#0d9ed9 ));
+    background: -webkit-linear-gradient(top, #black, #0d9ed9 );
+    background: -moz-linear-gradient(top, #black, #0d9ed9 );
+    background: -ms-linear-gradient(top, #black, #0d9ed9 );
+    background: -o-linear-gradient(top, #black, #0d9ed9 );
+    background-image: -ms-linear-gradient(top, #0b436e 0%, #0d9ed9 100%);
+    color: #fff;
+    -webkit-border-radius: 4px;
+    border: 1px solid #0d9ed9;
+  }
+  
+  .login .button-primary:active {
+    background-color:#e6ff00 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0d9ed9), to(#e6ff00));
+    background: -webkit-linear-gradient(top, #0d9ed9, #e6ff00);
+    background: -moz-linear-gradient(top, #0d9ed9, #e6ff00);
+    background: -ms-linear-gradient(top, #0d9ed9, #e6ff00);
+    background: -o-linear-gradient(top, #0d9ed9, #e6ff00);
+    background-image: -ms-linear-gradient(top, #0d9ed9 0%, #e6ff00 100%);
+    color: black;
+    -webkit-border-radius: 4px;
+    border: 1px solid #e6ff00;
+  }
+
+
+  .tml-login, .tml-social-divider, .tml-social-providers {
+    max-width: 320px;
+    margin: auto !important;
+    padding-bottom: 50px !important;
+}
+
+.tml .tml-label {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: #e6ff00 !important;
+}
+
+.tml .tml-field {
+  color: black !important;
+  border-radius: 5px !important;
+}
+
+.tml-button{
+  background: #34CCFF !important;
+  width: 100% !important;
+  height: 35px !important;
+  border-radius: 2px !important;
+  border: 0px !important;
+  box-shadow: 1px 1px 2px black !important;
+  color: white;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+.tml-button:hover{
+  background: rgb(2, 2, 68) !important;
+  color: white;
+}
+
+.tml-links *{
+  color: white;
+  text-decoration: underline;
+}
+
+/* register form */
+
+.tml-register {
+  max-width: 320px;
+  margin: auto !important;
+}
+
+.tml-social-providers{
+  padding-bottom: 5px !important;
+}
+
+ul.tml-social-providers li{
+  margin: 5px 0px 5px 0px;
+}
+
+
+.register-button-login{
+  width: 100% !important;
+  font-weight: bold !important;
+  color: black;
+  box-shadow: 1px 1px 2px black !important;
+}
+
+.register-button-login-text{
+  width: 100% !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: white;
+}

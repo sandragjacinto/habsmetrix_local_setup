@@ -1,0 +1,123 @@
+{
+    "key": "group_5bb365d0090cc",
+    "title": "Front Page Fields",
+    "fields": [
+        {
+            "key": "field_5bb365d827d1f",
+            "label": "big page title",
+            "name": "big_title_page",
+            "type": "text",
+            "instructions": "Enter a big field title",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Habsmetrix",
+            "placeholder": "Habsmetrix",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c5462700556e",
+            "label": "log in call to action",
+            "name": "log_in_call_to_action",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5bb384f172ee4",
+            "label": "small page description",
+            "name": "small_page_description",
+            "type": "text",
+            "instructions": "insert a small description",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "habsmetrix the best way to play the game",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5bb3852a72ee5",
+            "label": "description button",
+            "name": "description_button",
+            "type": "link",
+            "instructions": "link to an about page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5bb4e59e30188",
+            "label": "image presentation",
+            "name": "image_presentation",
+            "type": "image",
+            "instructions": "insert an image to present the project",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 400,
+            "max_height": 400,
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "comments"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1549034175
+}

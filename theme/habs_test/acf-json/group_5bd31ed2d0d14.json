@@ -1,0 +1,542 @@
+{
+    "key": "group_5bd31ed2d0d14",
+    "title": "core metrix",
+    "fields": [
+        {
+            "key": "field_5bd3209c9211e",
+            "label": "info",
+            "name": "info",
+            "type": "group",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5bd320d292120",
+                    "label": "category",
+                    "name": "category",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Management": "Management",
+                        "Player": "Player"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "label",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5bd320fc92121",
+                    "label": "position",
+                    "name": "position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bd320d292120",
+                                "operator": "==",
+                                "value": "Management"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Owner": "Owner",
+                        "President": "President",
+                        "General Manager": "General Manager",
+                        "Coach": "Coach",
+                        "Assistant Coach": "Assistant Coach"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5bd3210792122",
+                    "label": "number",
+                    "name": "number",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bd320d292120",
+                                "operator": "==",
+                                "value": "Player"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5bd3219992123",
+                    "label": "player position",
+                    "name": "player_position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bd320d292120",
+                                "operator": "==",
+                                "value": "Player"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Forward": "Forward",
+                        "Defence": "Defence",
+                        "Goalie": "Goalie"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5bd32350b2a74",
+            "label": "core metrix type",
+            "name": "core_metrix_type",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Slider",
+                "2": "Trade index",
+                "3": "Fire index"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5beb06f7c111b",
+            "label": "core question",
+            "name": "core_question",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bd32350b2a74",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Performance": "Performance",
+                "Salary": "Salary"
+            },
+            "default_value": [
+                "Performance"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "label",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5bd31fac5ca28",
+            "label": "slider valuation",
+            "name": "slider_valuation",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bd32350b2a74",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5beb06f7c111b",
+                        "operator": "==",
+                        "value": "Salary"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5c4052eb13d20",
+                    "label": "current valuation",
+                    "name": "current_valuation",
+                    "type": "text",
+                    "instructions": "type current valuation",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "650 k",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bd325a973944",
+                    "label": "min value",
+                    "name": "min_value",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 650000,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5bd325c273945",
+                    "label": "max value",
+                    "name": "max_value",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 15900000,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5bd325e773946",
+                    "label": "steps",
+                    "name": "steps",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 50000,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5beaf37a06bd4",
+            "label": "average",
+            "name": "average",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5beaf3dd06bd5",
+            "label": "counter",
+            "name": "counter",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c0ff564e97f5",
+            "label": "slider performance",
+            "name": "slider_performance",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bd32350b2a74",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5beb06f7c111b",
+                        "operator": "==",
+                        "value": "Performance"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5c0ff5a2e97f7",
+                    "label": "min value",
+                    "name": "min_value",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5c0ff5c3e97f8",
+                    "label": "max value",
+                    "name": "max_value",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 10,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5c0ff5d2e97f9",
+                    "label": "steps",
+                    "name": "steps",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5c54b94d2b221",
+            "label": "reset list",
+            "name": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Andrew Shaw": "Andrew Shaw",
+                "Antti Niemi": "Antti Niemi",
+                "Artturi Lehkonen": "Artturi Lehkonen",
+                "Brendan Gallagher": "Brendan Gallagher",
+                "Brett Kulak": "Brett Kulak",
+                "Carey Price": "Carey Price",
+                "Charles Hudon": "Charles Hudon",
+                "Claude Julien": "Claude Julien",
+                "David Schlemko": "David Schlemko",
+                "Dominique Ducharme": "Dominique Ducharme",
+                "Geoff Molson": "Geoff Molson",
+                "Jeff Petry": "Jeff Petry",
+                "Jesperi Kotkaniemi": "Jesperi Kotkaniemi",
+                "Joel Armia": "Joel Armia",
+                "Jonathan Drouin": "Jonathan Drouin",
+                "Jordie Benn": "Jordie Benn",
+                "Kenny Agostino": "Kenny Agostino",
+                "Kirk Muller": "Kirk Muller",
+                "Luke Richardson": "Luke Richardson",
+                "Marc Bergevin": "Marc Bergevin",
+                "Mario Leblanc": "Mario Leblanc",
+                "Matthew Peca": "Matthew Peca",
+                "Max Domi": "Max Domi",
+                "Michael Chaput": "Michael Chaput",
+                "Mike Reilly": "Mike Reilly",
+                "Nicolas Deslauriers": "Nicolas Deslauriers",
+                "Noah Juulsen": "Noah Juulsen",
+                "Paul Byron": "Paul Byron",
+                "Phillip Danault": "Phillip Danault",
+                "Shea Weber": "Shea Weber",
+                "Stephane Waite": "Stephane Waite",
+                "Tomas Tatar": "Tomas Tatar",
+                "Victor Mete": "Victor Mete",
+                "Xavier Ouellet": "Xavier Ouellet"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "core_metrix"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1549058116
+}
